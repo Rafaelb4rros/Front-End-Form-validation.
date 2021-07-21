@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carousel</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                    <form method="GET">
+                        <fieldset>
+                            <legend>Dados</legend>
+                            <div class="input-container">
+                                <input name="inputNome" class="name-input" type="text" placeholder="NOME COMPLETO"
+                                 pattern="^(?!.*[0-9])(?!.*[!@#$%^&_=+-]).{5,40}$" 
+                                 title="Esse campo deve ter no mínimo 10 caracteres e não pode conter
+                                  números e nem caracteres especiais" data-type="Nome" required>
+                                  <label class="inputLabel" for="inputNome">Nome Completo</label>
+                                  <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <div class="input-container">
+                                <input name="inputEmail" type="email" placeholder="EMAIL" data-type="Email"required>
+                                <label class="inputLabel" for="inputEmail">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" name="inputSenha" placeholder="SENHA" 
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&_=+-]).{6,12}$" 
+                                title="A senha deve conter, entre 6 a 12 caracteres pelo menos uma letra 
+                                maiúscula, um número e não deve conter caracteres especiais. " data-type="Senha" required>
+                                <label class="inputLabel" for="inputSenha">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Informações Pessoais</legend>
+                            <div class="input-container">
+                                <input type="number" name="inputCpf" placeholder="CPF" maxlength="11" data-type="Cpf" required>
+                                <label class="inputLabel" for="inputCpf">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="date" name="inputData" placeholder="DATA DE NASCIMENTO"
+                                 data-type="dataNasc" required>
+                                 <label class="inputLabel" for="inputData">E-mail</label>
+                                 <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            <div class="input-container">
+                                <input type="text" name="inputCep" placeholder="CEP" 
+                                 pattern="[\d]{5}-?[\d]{3}" data-type="Cep" required>
+                                <label class="inputLabel" for="inputCep">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" name="inputEstado" placeholder="ESTADO" data-type="Estado">
+                                <label class="inputLabel" for="inputEstado">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" name="inputCidade" placeholder="CIDADE" data-type="Cidade">
+                                <label class="inputLabel" for="inputCidade">E-mail</label>
+                                <span class="inputError">Esse campo não está válido.</span>
+                            </div>
+                            <button class="submit" type="submit">CADASTRAR</button>
+                        </fieldset>
+                    </form>
+            </section>
+        </main>
+     </body>   
+    <script type="module" src="js/main.js"></script>
+    </body>
+</html>
