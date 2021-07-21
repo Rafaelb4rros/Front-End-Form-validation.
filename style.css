@@ -1,0 +1,97 @@
+body {
+    background-image: radial-gradient(rgb(126, 217, 230), #606060);
+}
+
+label {
+    opacity: 0;
+    display: inline;
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 20px;
+}
+
+
+fieldset {
+    display: block;
+    text-align: initial;
+    width: 97%;
+    margin: 0 auto;
+    border: none;
+    margin: 10px auto;
+}
+legend {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: arial;
+    color: rgb(160, 156, 156);
+}
+
+.input-container {
+    margin: 0px 0;
+}
+
+.input-container span {
+    display: block;
+    opacity: 0;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    width: 650px;
+    height: 30px;
+    border: none;
+    border-bottom: solid 1px #c5c5c5;
+    background-color: rgb(255, 255, 255);
+    color: #a3a3a3;
+    font-size: 15px;
+    font-family: verdana;
+    font-weight: bold;
+}input::placeholder {
+    color: #a3a3a3;
+    font-size: 12px;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.input-container--error span{
+    position: relative;
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    bottom: 15px;
+    font-family: verdana;
+    opacity: 1;
+}
+
+.input-container--error input {
+    border: 1px solid red;
+}
+
+legend, .input-container--error span {
+    margin: 0 60px;
+}
+
+.submit {
+    position: relative;
+    width: 200px;
+    left: 300px;
+    height: 40px;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    background-color: cadetblue;
+}
